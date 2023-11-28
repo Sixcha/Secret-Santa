@@ -1,0 +1,28 @@
+<div class="background">
+    <div class="container">
+        <div class="image">
+            <h1>Secret Santa (Dev Edition)</h1>
+            <div *ngIf="!started" class="flex">
+                <div class="roulette">
+                    <h2>Users</h2>
+                    <app-user *ngFor="let user of userNames" [user]="user"
+                        (onDeleteClicked)="deleteUser($event)"></app-user>
+                    <br>
+                    <button *ngIf="!lockedIn" (click)="lockIn()">Lock In Participants</button>
+                    <button *ngIf="lockedIn" (click)="startSanta()">Start!</button>
+
+                </div>
+                <div class="users">
+                    <label for="name">Name</label>
+                    <input #name type="text" name="name" id="name">
+                    <button (click)="addUser(name.value)">Add user</button>
+                </div>
+            </div>
+            <div *ngIf="started" class="cards">
+                <app-cards *ngFor="let card of giftees" [giftee]="card"></app-cards>
+            </div>
+        </div>
+
+
+    </div>
+</div>

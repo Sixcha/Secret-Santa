@@ -1,0 +1,5 @@
+<div *ngIf="!done" (click)="revealUser()">
+    <p *ngIf="!revealed">{{giftee.user}}</p>
+    <p *ngIf="revealed">{{giftee.giftee}}</p>
+
+</div>

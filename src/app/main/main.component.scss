@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Rubik:wght@300;400&display=swap');
+
+* {
+    color: white;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image {
+    background-image: url("https://cdn.discordapp.com/attachments/1054763922177151016/1179040798268997685/sixcha_Christmas_wallpaper_looping_4d349f91-f24f-4862-bf1c-4fd66b8905bd.png?ex=6578564f&is=6565e14f&hm=9f3fa13ce328ccfb5fbd656f997ae868dc6b6c5f80decb5e5de5438354d92d06&");
+    min-height: 1000px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        align-self: center;
+        color: white;
+        background-color: #424549;
+        box-shadow: 2px 2px 2px #1e2124;
+        padding: 5px;
+    }
+}
+
+button {
+    background-color: #1e2124;
+}
+
+input {
+    background-color: #282b30;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.roulette {
+    background-color: #282b30;
+    border: 2px solid #7289da;
+    box-shadow: 10px 5px 5px black;
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    //align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+}
